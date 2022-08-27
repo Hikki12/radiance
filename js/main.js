@@ -3,7 +3,7 @@ const next = document.querySelector('#next');
 const hero = document.querySelector('#hero');
 const thumbnail = Array.from(document.getElementsByClassName('thumbnail'));
 
-
+// bg
 const backgrounds = [
     "/images/bg1.png",
     "/images/bg2.png",
