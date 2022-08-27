@@ -3,19 +3,21 @@ const next = document.querySelector('#next');
 const hero = document.querySelector('#hero');
 const thumbnail = Array.from(document.getElementsByClassName('thumbnail'));
 
+const prefix = "/radiance/" || "";
+
 // bg
 const backgrounds = [
-    "/images/bg1.png",
-    "/images/bg2.png",
-    "/images/bg3.png",
-    "/images/bg4.png",
-    "/images/bg5.png",
+    "images/bg1.png",
+    "images/bg2.png",
+    "images/bg3.png",
+    "images/bg4.png",
+    "images/bg5.png",
 ]
 
 let i = 0;
 
 const updateBackground = () => {
-    hero.style.backgroundImage = `url(${backgrounds[i]})`;
+    hero.style.backgroundImage = `url(${prefix}${backgrounds[i]})`;
 }
 
 const increaseBackgroundIndex = () => {
